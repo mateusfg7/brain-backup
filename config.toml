@@ -1,3 +1,39 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Mateus Felipe Gonçalves"
+theme = "papermod"
+
+[params.profileMode]
+enabled = true
+imageUrl = "https://avatars1.githubusercontent.com/u/40613276?v=4"
+imageWidth = 120
+imageHeight = 120
+ShowShareButtons = true
+ShowReadingTime = true
+
+
+  [[params.profileMode.buttons]]
+  name = "Search"
+  url = "/search"
+
+  [[params.profileMode.buttons]]
+  name = "Posts"
+  url = "/posts"
+
+
+[[params.socialIcons]]
+name = "Github"
+url = "https://github.com/mateusfg7"
+
+[[params.socialIcons]]
+name = "Telegram"
+url = "https://t.me/mateusfg7"
+
+[[params.socialIcons]]
+name = "Twitter"
+url = "https://twitter.com/mateusfg77"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+

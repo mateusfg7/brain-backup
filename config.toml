@@ -16,6 +16,10 @@ ShowReadingTime = true
   name = "Search"
   url = "/search"
 
+	[[params.profileMode.buttons]]
+  name = "Archive"
+  url = "/archive"
+
   [[params.profileMode.buttons]]
   name = "Posts"
   url = "/posts"

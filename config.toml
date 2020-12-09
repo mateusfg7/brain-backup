@@ -1,7 +1,21 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
+baseURL = "http://mateus.great-site.net/"
 title = "Mateus Felipe Gonçalves"
 theme = "papermod"
+
+[[menu.main]]
+name = "Archive"
+url = "archive"
+weight = 5
+
+[[menu.main]]
+name = "Search"
+url = "search/"
+weight = 10
+
+[[menu.main]]
+name = "Tags"
+url = "tags/"
+weight = 10
 
 [params.profileMode]
 enabled = true
@@ -12,16 +26,12 @@ ShowShareButtons = true
 ShowReadingTime = true
 
 
-  [[params.profileMode.buttons]]
-  name = "Search"
-  url = "/search"
-
 	[[params.profileMode.buttons]]
-  name = "Archive"
-  url = "/archive"
+  name = "WayBackMachine"
+  url = "https://web.archive.org/web/20201209123032/http://mateus.great-site.net/?i=1"
 
   [[params.profileMode.buttons]]
-  name = "Posts"
+  name = "Blog"
   url = "/posts"
 
 
@@ -32,6 +42,11 @@ url = "https://github.com/mateusfg7"
 [[params.socialIcons]]
 name = "Telegram"
 url = "https://t.me/mateusfg7"
+
+[[params.socialIcons]]
+name = "Linkedin"
+url = "https://linkedin.com/in/mateusfg"
+
 
 [[params.socialIcons]]
 name = "Twitter"

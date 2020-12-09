@@ -17,6 +17,12 @@ name = "Tags"
 url = "tags/"
 weight = 10
 
+[[menu.main]]
+name = "Links"
+url = "/mylinks.html"
+weight = 10
+
+
 [params.profileMode]
 enabled = true
 imageUrl = "https://avatars1.githubusercontent.com/u/40613276?v=4"
@@ -27,8 +33,8 @@ ShowReadingTime = true
 
 
 	[[params.profileMode.buttons]]
-  name = "WayBackMachine"
-  url = "https://web.archive.org/web/20201209123032/http://mateus.great-site.net/?i=1"
+  name = "Statistics"
+  url = "/stats"
 
   [[params.profileMode.buttons]]
   name = "Blog"

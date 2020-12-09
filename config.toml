@@ -51,6 +51,3 @@ url = "https://linkedin.com/in/mateusfg"
 [[params.socialIcons]]
 name = "Twitter"
 url = "https://twitter.com/mateusfg77"
-
-[params.assets]
-disableFingerprinting = true

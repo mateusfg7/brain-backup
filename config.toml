@@ -33,7 +33,5 @@ url = "https://t.me/mateusfg7"
 name = "Twitter"
 url = "https://twitter.com/mateusfg77"
 
-[outputs]
-home = [ "HTML", "RSS", "JSON" ]
-
-
+[params.assets]
+disableFingerprinting = true

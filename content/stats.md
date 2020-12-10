@@ -6,7 +6,7 @@ date: 2020-12-09
 ## Programming
 
 ![Profile Stats](https://github-readme-stats.vercel.app/api?username=mateusfg7&show_icons=true&title_color=555555&icon_color=555555&text_color=4098fc&bg_color=00000008&hide_border=true)
-![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=mateusfg7&https://github-readme-stats.vercel.app/api?username=mateusfg7&show_icons=true&title_color=555555&icon_color=555555&text_color=4098fc&bg_color=00000008&hide_border=true)
+![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=mateusfg7&show_icons=true&title_color=555555&icon_color=555555&text_color=4098fc&bg_color=00000008&hide_border=true)
 ![Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mateusfg7&layout=compact&hide_border=true&langs_count=100&show_icons=true&title_color=555555&icon_color=555555&text_color=4098fc&bg_color=00000008&hide_border=true)
 
 ## Fingers

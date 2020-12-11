@@ -1,7 +1,13 @@
 ---
 title: "Ha um erro crítico no seu Wordpress!"
 date: 2020-12-09T18:20:54-03:00
-tags: ["wordpress", "erro"]
+categories:
+- Wordpress
+tags:
+- erro
+- atualização
+- backup
+- experiências
 summary: "Minhas experiências com atualizações"
 draft: false
 ---

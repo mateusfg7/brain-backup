@@ -11,7 +11,8 @@ categories:
 project_url: "https://github.com/gohugoio/hugo"
 language: "English"
 ShowToc: true
-draft: false
+ReadingTime: "5"
+draft: true
 ---
 
 ## Some title

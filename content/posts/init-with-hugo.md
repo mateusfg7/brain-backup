@@ -2,11 +2,12 @@
 title: "Init With Hugo"
 date: 2020-12-08T19:04:31-03:00
 summary: "Let's play with hugo!"
+description: Well, my first real blog, with Hugo.
+categorie: Starter
 tags: ["hugo", "frameworks", "website"]
 draft: false
 ---
 
-Well, my first real blog, with Hugo.
 This post is just to test the framework, I will complement this later.
 
 ## Info

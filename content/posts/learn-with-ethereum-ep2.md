@@ -1,17 +1,20 @@
 ---
 title: "Learn With Ethereum #2"
-summary: "Side quests"
+summary: "Criptografando mensagens com chave pública"
 description: "Side quests"
 date: 2020-12-12T11:09:16-03:00
 showToc: true
+categorie: Blockchain
 tags:
 - ethereum
-- blockchain
 - hash
 - crypto
 - algorithm
 - pgp
 - chat
+- step-by-step
+- starter
+- learn-with-ethereum
 draft: false
 ---
 
@@ -28,7 +31,6 @@ draft: false
 
 <!--- VARIABLES BLOCK -->
 
-Primeiros passos em [eth.build](eth.build)
 
 ## Encryption (side quest)
 ![](/posts/learn-with-ethereum/screenshot_10.png)

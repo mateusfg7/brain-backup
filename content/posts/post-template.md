@@ -6,8 +6,7 @@ tags:
 - template
 - draft
 - test
-categories: 
-- Template
+categorie: Template
 project_url: "https://github.com/gohugoio/hugo"
 language: "English"
 ShowToc: true

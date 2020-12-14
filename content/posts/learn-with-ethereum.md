@@ -1,15 +1,19 @@
 ---
 title: "Learn With Ethereum"
-summary: "First steps on eth.build"
-description: "First steps on eth.build"
+summary: "Desenvolvendo alguns algoritimos de criptografia e hash no eth.build"
+description: "Primeiros passos em eth.build"
 date: 2020-12-11T13:05:46-03:00
 showToc: true
+categorie: Blockchain
 tags:
 - ethereum
 - blockchain
 - hash
 - crypto
 - algorithm
+- step-by-step
+- starter
+- learn-with-ethereum
 draft: false
 ---
 

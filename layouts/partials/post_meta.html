@@ -18,6 +18,7 @@
 {{- delimit . "&nbsp;·&nbsp;"}}
 {{- end }}
 
-·
 
-{{ .Params.Categorie }}
+{{- if .Params.Categories -}}
+&nbsp;·&nbsp;{{ .Params.Categories }}
+{{- end }}

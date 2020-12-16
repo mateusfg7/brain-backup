@@ -1,13 +1,14 @@
 ---
 title: "Ha um erro crítico no seu Wordpress!"
 date: 2020-12-09T18:20:54-03:00
-categorie: Report
+categories: Report
 tags:
 - erro
 - atualização
 - backup
 - experiências
 - wordpress
+- cms
 summary: "Fui atualizar o WP e deu merda"
 description: "Minhas experiências com atualizações"
 draft: false

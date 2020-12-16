@@ -4,7 +4,7 @@ summary: "Criptografando mensagens com chave pública"
 description: "Side quests"
 date: 2020-12-12T11:09:16-03:00
 showToc: true
-categorie: Blockchain
+categories: Blockchain
 tags:
 - ethereum
 - hash
@@ -15,6 +15,7 @@ tags:
 - step-by-step
 - starter
 - learn-with-ethereum
+- tool
 draft: false
 ---
 

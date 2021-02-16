@@ -1,6 +1,8 @@
 ---
 title: "About"
-date: 2020-12-09
+date: 2021-02-15
+last-updates:
+- 2020-12-09
 showToc: true
 ---
 # IDs
@@ -42,14 +44,16 @@ GAT C+++ UL+++ L++++ W+++ PS+ PE++ Y? PGP+++ b+ G++
 
 mode | rating
 --|--
+rapid | 1791
 classical | 1303
-correspondence | 1606
-puzzles | 1600
+correspondence | 1603
+puzzles | 1538
 
 ### [Chess.com](https://www.chess.com/member/mateusfg7)
 
 mode | rating
 ---|---
+rapid | 871
 puzzles | 431
 
 ---

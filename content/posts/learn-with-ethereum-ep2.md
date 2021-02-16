@@ -4,18 +4,18 @@ summary: "Criptografando mensagens com chave pública"
 description: "Side quests"
 date: 2020-12-12T11:09:16-03:00
 showToc: true
-categories: Blockchain
+categories: Ethereum
 tags:
-- ethereum
 - hash
 - crypto
 - algorithm
-- pgp
+- assimetric-cipher
 - chat
 - step-by-step
 - starter
 - learn-with-ethereum
 - tool
+- blockchain
 draft: false
 ---
 

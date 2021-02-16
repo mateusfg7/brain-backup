@@ -3,7 +3,7 @@ title: "Oak Over Https"
 summary: "Integrando Oak com certificados SSL"
 description: "Use HTTPS"
 date: 2021-01-08T12:31:17-03:00
-categories: Security
+categories: Deno
 tags:
 - https
 - ssl

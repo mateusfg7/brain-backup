@@ -4,9 +4,8 @@ summary: "Desenvolvendo alguns algoritimos de criptografia e hash no eth.build"
 description: "Primeiros passos em eth.build"
 date: 2020-12-11T13:05:46-03:00
 showToc: true
-categories: Blockchain
+categories: Ethereum
 tags:
-- ethereum
 - blockchain
 - hash
 - crypto

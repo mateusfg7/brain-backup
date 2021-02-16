@@ -4,16 +4,13 @@ date: 2020-12-16T17:04:43-03:00
 summary: "How to install, use and configure Neovim"
 description: "Neovim Guide"
 tags:
-- vim
-- neovim
 - cli
 - step-by-step
 - plugins
 - editor
-- vi
 - programming
 - code
-categories: Editor
+categories: Neovim
 ShowToc: true
 draft: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Learn Elixir #2"
-summary: "Conditions"
+summary: "case"
 description: "Case Condition and Anonymous Functions guards"
 date: 2021-02-16T19:23:38-03:00
 draft: false
@@ -17,7 +17,6 @@ showToc: true
 
 ## Case
 
-_code_
 ```elixir
 case {1, 2, 3} do       
   {1, _x, 3} ->  
@@ -30,14 +29,12 @@ case {1, 2, 3} do
     "This clause would match any value"
 end
 ```
-_out_
 ```elixir
 "This clause will match and bind _x to 2 in this clause"
 ```
 
 **To use pattern match you need to use pin`^` operator**
 
-_code_
 ```elixir
 x = 1
 
@@ -46,14 +43,12 @@ case 10 do
   _ -> "Will match"
 end
 ```
-_out_
 ```elixir
 "Will match"
 ```
 
 **Clause allow extra coditions to be specified via guards**
 
-_code_
 ```elixir
 case {1, 2, 3} do
   {1, x, 3} when x > 0 ->
@@ -62,7 +57,6 @@ case {1, 2, 3} do
     "Would match, if guard condition were not satisfied"
 end
 ```
-_out_
 ```elixir
 "Will match"
 ```
@@ -75,20 +69,17 @@ iex> hd(1)
   :erlang.hd(1)
 ```
 
-_code_
 ```elixir
 case 1 do
   x when hd(x) -> "Won't match"
   x -> "Got #{x}"
 end
 ```
-_out_
 ```elixir
 "Got 1"
 ```
 **Anonymous Functions can also have multiple clauses and guards**
 
-_code_
 ```elixir
 f = fn
   x, y when x > 0 -> x + y

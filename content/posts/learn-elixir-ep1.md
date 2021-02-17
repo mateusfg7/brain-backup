@@ -29,6 +29,14 @@ iex> "hello" <> " world"
 
 _Running Scripts_: `elixir hello-word.exs`
 
+_Hello Word:_
+```elixir
+IO.puts "Hello Word"
+```
+```elixir
+"Hello Word"
+```
+
 ## [Basic types](https://elixir-lang.org/getting-started/basic-types.html)
 
 ### _Get Data Type_: `i data`

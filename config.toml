@@ -39,11 +39,11 @@ ShowReadingTime = true
 
 	[[params.profileMode.buttons]]
   name = "About"
-  url = "/about"
+  url = "about/"
 
   [[params.profileMode.buttons]]
   name = "Blog"
-  url = "/posts"
+  url = "posts/"
 
 
 [[params.socialIcons]]

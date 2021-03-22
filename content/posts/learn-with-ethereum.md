@@ -34,7 +34,7 @@ Primeiros passos em [eth.build](eth.build)
 
 #### ... a string
 
-![](/posts/learn-with-ethereum/screenshot_1.png)
+![screenshot 1](screenshot_1.png)
 
 O input principal é o bloco **TEXT**, no qual está sendo usado o valor "Hello Word".
 
@@ -48,7 +48,7 @@ O segundo bloco **STRING** esta exibindo o _output_ do **SUBSTRING**, e esta env
 
 #### ... a file
 
-![](/posts/learn-with-ethereum/screenshot_2.png)
+![screenshot 2](screenshot_2.png)
 
 
 Os mesmos passos que com uma _string_, porem susbstituindo um bloco **STRING** por um bloco **FILE DROP**. O bloco **FILE DROP** recebe um arquivo como _input_.
@@ -56,8 +56,8 @@ Os mesmos passos que com uma _string_, porem susbstituindo um bloco **STRING** p
 
 #### ... combinations of hashes
 
-![](/posts/learn-with-ethereum/screenshot_3.png)
-![](/posts/learn-with-ethereum/screenshot_4.png)
+![screenshot 3](screenshot_3.png)
+![screenshot 4](screenshot_4.png)
 
 Aqui estou usando o bloco **COMBINE** para combinar as _hashes_ anteriores e gerar uma nova cor com o mesmo processo.
 
@@ -65,7 +65,7 @@ Qualquer mudança no _input_ inicial de qualquer um dos 3 blocos **TEXT** irá a
 
 ## Key Pair
 
-![](/posts/learn-with-ethereum/screenshot_5.png)
+![screenshot 5](screenshot_5.png)
 
 ### Generate fingerprints
 
@@ -74,7 +74,7 @@ Qualquer mudança no _input_ inicial de qualquer um dos 3 blocos **TEXT** irá a
 Private Key: `0x7eed612b561d9a7a738bd009a810577fd7023842b481b7523af95aa50350dd16`
 Public Key: `0x299be7653d60ae3f8a6e5bf003c3989eb626e0f5e4240bae1cd0914da17b441960f99ec90445fbd4e5566b6dc0856ff167fdf65f128eb697a9995fe8ba459da7`
 
-Address: ![](/posts/learn-with-ethereum/screenshot_6.png)
+Address: ![screenshot 6](screenshot_6.png)
 
 ### Sign a message
 
@@ -83,7 +83,7 @@ O bloco **SIGN** vai usar como parâmetro de _input_ uma mensagem, no caso "the 
 
 ### Verify a message
 
-![](/posts/learn-with-ethereum/screenshot_7.png)
+![screenshot 7](screenshot_7.png)
 [_click here to edit this workflow on eth.build_][workflow 2]
 
 O bloco **RECOVER** é capaz de pegar a mensagem e a assinatura, e verificar se a assinatura é válida de um determinado endereço.
@@ -94,7 +94,7 @@ O bloco **RECOVER** é capaz de pegar a mensagem e a assinatura, e verificar se 
 
 ### Create a receiver address
 
-![](/posts/learn-with-ethereum/screenshot_8.png)
+![screenshot 8](screenshot_8.png)
 [_click here to edit this workflow on eth.build_][workflow 3]
 
 O bloco **HASH** recebe um texto ("bowtiefriday") e devolve um _hash_, o bloco **KEY PAIR** recebe essa _hash_ como uma chave privada e devolve um _eddress_.
@@ -105,7 +105,7 @@ O bloco **BALANCE** recebe como parâmetro o endereço de uma rede _blockchain_ 
 
 ### Send values
 
-![](/posts/learn-with-ethereum/screenshot_9.png)
+![screenshot 9](screenshot_9.png)
 [_click here to edit this workflow on eth.build_][workflow 4]
 
 O bloco **TRANSACTION** é o bloco que vai fazer a transação de moedas, ele recebe 3 parâmetros, _privateKey_, _to_ e _value_.

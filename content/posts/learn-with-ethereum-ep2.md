@@ -34,7 +34,7 @@ draft: false
 
 
 ## Encryption (side quest)
-![](/posts/learn-with-ethereum/screenshot_10.png)
+![screenshot 10](screenshot_10.png)
 [_click here to edit this workflow on eth.build_][workflow 5]
 
 disclaimer: Todos esses blocos ja são conhecidos portando não vou reesplica-los, se quiser revisar veja o [primeiro post](/posts/learn-with-ethereum/) da série.
@@ -42,7 +42,7 @@ disclaimer: Todos esses blocos ja são conhecidos portando não vou reesplica-lo
 O legal desse workflow é pra notar algo, o endereço gerado pelo **KEY PAIR**. Se você notar, o _address_ são os 42 últimos caracteres da _hash_ da _public key_.
 
 ### Encrypt a message
-![](/posts/learn-with-ethereum/screenshot_11.png)
+![screenshot 11](screenshot_11.png)
 [_click here to edit this workflow on eth.build_][workflow 6]
 
 O bloco **ENCRYPT** é o bloco que consegue criptografar uma mensagem usando uma _public key_, ele recebe como parâmetro a _public key_ e a _message_. Semelhante ao funcionamento da criptografia [PGP](/posts/pgp).
@@ -56,7 +56,7 @@ Message: `hello word this is alice for alice`
 E devolve a mensagem criptografada: `0xabc62f77ba4447a16825e10764687a9902f5bc3c03dab4660dacc1ced1a311665b713113d0ad029e7f174d0c3439b11ebafaacaebbddc897c17f67c8ee3a3d4e8fe861cef74897931e7a09e253fb553a0e0032e55ce503e405b6089505e1529456e684b98150c7a48e7115897c4ceb572e174ead1f60b75a153ed832a5abdda3bc`
 
 ### Decrypt a message
-![](/posts/learn-with-ethereum/screenshot_12.png)
+![screenshot 12](screenshot_12.png)
 [_click here to edit this workflow on eth.build_][workflow 7]
 
 O bloco **DECRYPT**, como o próprio nome diz, faz o inverso do bloco **ENCRYPT**. Ele recebe como parâmetro a _private key_ e _encrypted_ (a mensagem criptografada no bloco **ENCRYPT**).
@@ -66,24 +66,24 @@ Private Key usada: `0x9c0257114eb9399a2985f8e75dad7600c5d89fe3824ffa99ec1c3eb8bf
 Este bloco devolve como retorno a mensagem inicial descriptografada (`"hello word this is alice for alice"`).
 
 ### Full Encrypt/Decrypt Workflow
-![](/posts/learn-with-ethereum/screenshot_13.png)
+![screenshot 13](screenshot_13.png)
 [_click here to edit this workflow on eth.build_][workflow 8]
 
 
 ### Publish/Subscribe messages
-![](/posts/learn-with-ethereum/screenshot_14.png)
+![screenshot 14](screenshot_14.png)
 [_click here to edit this workflow on eth.build_][workflow 9]
 
 O bloco **PUBLISH** serve pra enviar uma determinada mensagem em uma rede, tipo um canal [IRC](/posts/irc) (no caso a rede padrão é network.eth.build). E o bloco **SUBSCRIBE** é o bloco que recebe a mensagem. A cada envio no **PUBLISH** o **SUBSCRIBE** recebe automaticamente, de qualquer um que enviar uma mensagem.
 
 #### Encrypt messages on the network
-![](/posts/learn-with-ethereum/screenshot_15.png)
+![screenshot 15](screenshot_15.png)
 [_click here to edit this workflow on eth.build_][workflow 10]
 
 Aqui podemos combinar os blocos **ENCRYPT** e **PUBLISH** para enviarmos uma mensagem criptografada na rede. E depois obtermos a mensagem criptografada com o **SUBSCRIBE**: `0xf0565fb9b8d0ce71b5886c71dfad9803020bd4e8329e66b63b93703283f6e6dbae5c181458a166966a5a70bedc96f3f3ad52261ab619ee312ff5979af11cc4f0eeb0c9af9baeb6b3dd66af72c97a371482066a5cd40e11bf24d4f469416b27831c03189b3e07b3c5a8044ca95392b1d5c9`
 
 #### Decrypt messages on the network
-![](/posts/learn-with-ethereum/screenshot_16.png)
+![screenshot 16](screenshot_16.png)
 [_click here to edit this workflow on eth.build_][workflow 11]
 
 Combinando o workflow anterior com o bloco **DECRYPT** conseguimos descriptografar a mensagem enviada na rede.

@@ -46,7 +46,7 @@ If you pass file name as ':memory:', the database will be saved on the memory of
 ![image 2](screenshot_2.png)
 
 
-## Refactor
+## Refactor 1
 
 Before of all, lets create a class where will contain all the methods:
 
@@ -140,6 +140,151 @@ If we run `ls` we will see that `database.db` was created:
 Now we can use the command `sqlite3` passing our database as a param, then, run the `.tables` command to see the tables that we created:
 
 ![screenshot 4](screenshot_4.png)
+
+## Refactor 2
+
+First, let's write the connection and the insert statement as a hard code on `__init__` function:
+
+```python
+# ...code
+
+  def __init__(self, db_file="database.db"):
+    try:
+      # create connection
+      self.conn = sqlite3.connect(db_file)
+    except Error as e:
+      print(e)
+
+    # create projects table
+    self.create_table(""" CREATE TABLE IF NOT EXISTS projects (
+                            id integer PRIMARY KEY,
+                            name text NOT NULL,
+                            begin_date text,
+                            end_date text
+                          );
+                      """)
+
+    # create tasks table
+    self.create_table(""" CREATE TABLE IF NOT EXISTS tasks (
+                            id integer PRIMARY KEY,
+                            name text NOT NULL,
+                            priority integer,
+                            status_id integer NOT NULL,
+                            project_id integer NOT NULL,
+                            begin_date text NOT NULL,
+                            end_date text NOT NULL,
+                            FOREIGN KEY (project_id) REFERENCES projects (id)
+                          );
+                      """)
+
+
+# code...
+```
+Then, delete the `create_connection` function.
+
+## Insert Data
+
+To add data to the tables, we need the function `execute` of the `Cursor` object. The `execute` function receive two params, the sql statement and a tuple with the data, after this, we need to run the `commit` function of the connection, something like this:
+
+```python
+cur = conn.cursor()
+cur.execute(sql, data)
+conn.commit()
+```
+
+Let's create the function to add data on projects table and the tasks tables with this logic:
+
+```python
+# ...code
+
+def create_project(self, project):
+  """ create new project into the project table 
+  :param conn:
+  :param project:
+  :return: project id
+  """
+
+  sql = ''' INSERT INTO projects(name, begin_date, end_date)
+  VALUES(?,?,?) '''
+
+  cur = self.conn.cursor()
+  
+  cur.execute(sql, project)
+  self.conn.commit()
+  
+  return cur.lastrowid
+
+def create_task(self, task):
+  """ create new task
+  :param conn:
+  :param task:
+  :return:
+  """
+
+  slq = ''' INSERT INTO tasks(name, priority, status_id, project_id, begin_date, end_date)
+  VALUES(?,?,?,?,?,?)'''
+  
+  cur = self.conn.cursor()
+  
+  cur.execute(slq, task)
+  self.conn.commit()
+
+  return cur.lastrowid
+
+
+# code...
+```
+
+Running the python3 interactive shell, import the class and instantiate it in the `db_manager` variable:
+
+```python
+>>> from db_manager import DB_Manager
+>>> db_manager = DB_Manager()
+```
+
+after that, create the variable containing the project data, and a variable to save the project id on database:
+
+```python
+>>> project = ('Cool App with SQLite & Python', '2021-03-20', '2021-03-23')
+>>> project_id = db_manager.create_project(project)
+```
+
+then, create two tasks and save it on the database:
+
+```python
+>>> task_1 = ('Analyze the requirements of the app', 1, 1, project_id, '2021-03-20', '2021-03-23')
+>>> task_2 = ('Confirm with user about the top requirements', 1, 1, project_id, '2021-03-20', '2021-03-23')
+>>> db_manager.create_task(task_1)
+1
+>>> db_manager.create_task(task_2)
+2
+```
+
+The project and the tasks are saved now. Open the database to see the data.
+
+With the open database, use this commands to format the output:
+
+```bash
+sqlite> .header on
+sqlite> .mode column
+```
+
+Use the `SELECT` statement to get data from `projects` table:
+
+```sql
+SELECT * FROM projects;
+```
+
+![screenshot 5](screenshot_5.png)
+
+Use the same statement to get data from `tasks` table:
+
+```sql
+SELECT * FROM tasks;
+```
+
+![screenshot 6](screenshot_6.png)
+
 
 ---
 ## referencies:
